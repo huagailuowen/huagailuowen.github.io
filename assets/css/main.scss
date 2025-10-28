@@ -34,7 +34,7 @@ body {
   color: var(--text-color);
 }
 
-/* 添加半透明遮罩层 */
+// /* 添加半透明遮罩层 */
 body::before {
   content: "";
   position: fixed;
@@ -43,10 +43,13 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(255, 255, 255, 0.6); /* 白天时稍微淡一点 */
-  backdrop-filter: brightness(0.95);
+  // background: rgba(255, 255, 255, 0.6); /* 白天时稍微淡一点 */
+  // backdrop-filter: brightness(0.95);
 }
-
+html[data-theme="light"] body::before {
+  background: rgba(255, 255, 255, 0.6);
+  // backdrop-filter: brightness(1) blur(3px);
+}
 /* --- 夜间主题检测：al-folio 会给 <html> 添加 data-theme="dark" --- */
 html[data-theme="dark"] body::before {
   background: rgba(0, 0, 0, 0.6);
