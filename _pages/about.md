@@ -23,7 +23,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I am Chenyuan Zhou, a student at the SJTU ACM class of 2023. My interests include robotics, computer vision, and multimodal learning. I have a strong passion for technology and innovation, and I am always eager to learn and explore new ideas.
+I am Chenyuan Zhou, a student at the SJTU ACM class of 2023. My interests include computer vision, and multimodal learning. I have a strong passion for technology and innovation, and I am always eager to learn and explore new ideas.
 Currently, I am working in RHOS at Shanghai Jiao Tong University under the supervision of Prof. Yonglu Li and Cewu Lu.
 
 
