@@ -23,8 +23,9 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I am Chenyuan Zhou, a student at the SJTU ACM class of 2023. My interests include computer vision, and multimodal learning. I have a strong passion for technology and innovation, and I am always eager to learn and explore new ideas.
-Currently, I am working in RHOS at Shanghai Jiao Tong University under the supervision of Prof. Yonglu Li and Cewu Lu.
+I am Chenyuan Zhou, an undergraduate student in the ACM Honors Class at Shanghai Jiao Tong University. My research interests lie at the intersection of robotics, computer vision, multimodal learning, and continual learning. I am especially interested in building systems that can perceive 3D structure, follow instructions, and adapt from new experiences in the real world.
 
+Since June 2026, I have been a research intern at Stanford CS, Stanford University, co-advised by Prof. Yejin Choi and Prof. Leonidas Guibas and mentored by Dr. Yining Hong, a postdoctoral scholar in Stanford CS. My current work explores multimodal and continual learning for adaptive robotic systems.
 
+Previously, I worked at RHOS under the supervision of Prof. Yong-Lu Li and Prof. Ce-Wu Lu, focusing on precise manipulation from visual instructions and adaptation to diverse tools.
 
