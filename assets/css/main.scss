@@ -47,9 +47,14 @@ html[data-theme="light"] body::before {
   background: rgba(255, 255, 255, 0.6);
   // backdrop-filter: brightness(1) blur(3px);
 }
+
+html[data-theme="dark"] body {
+  background-image: url("/assets/img/background-dark.jpg");
+}
+
 /* --- 夜间主题检测：al-folio 会给 <html> 添加 data-theme="dark" --- */
 html[data-theme="dark"] body::before {
-  background: rgba(0, 0, 0, 0.52);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
 }
 
