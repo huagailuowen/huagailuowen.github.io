@@ -23,39 +23,58 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
-/* --- 默认亮色模式 --- */
+/* Quiet frosted-glass surface shared by the homepage and inner pages. */
 body {
-  background-image: url("/assets/img/background.jpg");
-  background-size: cover;
+  background-color: #bfc3c8;
+  background-image: linear-gradient(145deg, #d8dade 0%, #bdc1c6 52%, #aeb3b9 100%);
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
   color: var(--global-text-color);
 }
 
-// /* 添加半透明遮罩层 */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  // background: rgba(255, 255, 255, 0.6); /* 白天时稍微淡一点 */
-  // backdrop-filter: brightness(0.95);
+body > .container[role="main"] {
+  --global-bg-color: rgba(38, 40, 43, 0.52);
+  --global-text-color: rgba(255, 255, 255, 0.95);
+  --global-text-color-light: rgba(255, 255, 255, 0.62);
+  --global-divider-color: rgba(255, 255, 255, 0.18);
+  --global-card-bg-color: rgba(38, 40, 43, 0.5);
+  --global-theme-color: #f3a6ee;
+  --global-hover-color: #ffd0fb;
+  padding: clamp(1.4rem, 3vw, 2.6rem);
+  border: 2px solid rgba(255, 255, 255, 0.32);
+  border-radius: 40px;
+  background: linear-gradient(135deg, rgba(65, 67, 70, 0.86), rgba(43, 45, 48, 0.82));
+  box-shadow:
+    0 24px 58px rgba(30, 33, 37, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px) saturate(105%);
+  -webkit-backdrop-filter: blur(20px) saturate(105%);
 }
-html[data-theme="light"] body::before {
-  background: rgba(255, 255, 255, 0.6);
-  // backdrop-filter: brightness(1) blur(3px);
+
+.navbar {
+  --global-text-color: rgba(255, 255, 255, 0.92);
+  --global-divider-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(43, 45, 48, 0.86);
+  backdrop-filter: blur(18px) saturate(115%);
+  -webkit-backdrop-filter: blur(18px) saturate(115%);
 }
 
 html[data-theme="dark"] body {
-  background-image: url("/assets/img/background-dark.jpg");
+  background-color: #08090a;
+  background-image: linear-gradient(145deg, #181a1d 0%, #0e0f11 55%, #050607 100%);
 }
 
-/* --- 夜间主题检测：al-folio 会给 <html> 添加 data-theme="dark" --- */
-html[data-theme="dark"] body::before {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+html[data-theme="dark"] body > .container[role="main"] {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(59, 61, 64, 0.78), rgba(35, 37, 40, 0.76));
+  box-shadow:
+    0 26px 64px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(22, 24, 27, 0.88);
 }
 
 /* 调整文字颜色以增强可读性 */
@@ -70,8 +89,8 @@ html[data-theme="dark"] a {
 
 /* Blend the copyright bar into the active theme. */
 :root {
-  --global-footer-bg-color: rgba(255, 255, 255, 0.72);
-  --global-footer-text-color: rgba(28, 28, 29, 0.78);
+  --global-footer-bg-color: rgba(43, 45, 48, 0.88);
+  --global-footer-text-color: rgba(255, 255, 255, 0.72);
   --global-footer-link-color: var(--global-theme-color);
 }
 
@@ -83,5 +102,13 @@ html[data-theme="dark"] {
 
 footer.fixed-bottom {
   border-top: 1px solid var(--global-divider-color);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(18px) saturate(115%);
+  -webkit-backdrop-filter: blur(18px) saturate(115%);
+}
+
+@media (max-width: 575.98px) {
+  body > .container[role="main"] {
+    margin-top: 1.25rem !important;
+    border-radius: 28px;
+  }
 }
