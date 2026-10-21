@@ -8,7 +8,7 @@ profile:
   align: right
   image: profile-mountain-v2.jpg
   image_circular: false # crops the image to make it circular
-  more_info: <center> <a href="mailto:zhouchenyuan@sjtu.edu.cn">Email</a> | <a href="https://github.com/huagailuowen" rel="external nofollow noopener" target="_blank">GitHub</a> | <a href="./assets/pdf/CV.pdf">CV</a></center>
+  more_info: <center> <a href="mailto:zhouchenyuan@sjtu.edu.cn">Email</a> | <a href="https://github.com/huagailuowen" rel="external nofollow noopener" target="_blank">GitHub</a> | <a href="./assets/pdf/CV.pdf?v=fe003a7bbcd6">CV</a></center>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
