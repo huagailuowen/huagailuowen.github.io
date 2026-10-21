@@ -87,6 +87,22 @@ html[data-theme="dark"] a {
   color: rgba(255, 255, 255, 0.92) !important;
 }
 
+.profile .more-info {
+  color: #fff;
+
+  a,
+  a:visited,
+  a:hover,
+  a:focus-visible {
+    color: #fff !important;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration: underline;
+  }
+}
+
 /* Blend the copyright bar into the active theme. */
 :root {
   --global-footer-bg-color: rgba(43, 45, 48, 0.88);

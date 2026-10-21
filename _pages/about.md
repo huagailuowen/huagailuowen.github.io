@@ -6,7 +6,7 @@ subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: profile.jpg
+  image: profile-mountain-v2.jpg
   image_circular: false # crops the image to make it circular
   more_info: <center> <a href="mailto:zhouchenyuan@sjtu.edu.cn">Email</a> | <a href="https://github.com/huagailuowen" rel="external nofollow noopener" target="_blank">GitHub</a> | <a href="./assets/pdf/CV.pdf">CV</a></center>
 
