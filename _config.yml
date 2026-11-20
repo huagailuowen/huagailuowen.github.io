@@ -301,6 +301,8 @@ scholar:
   join_strings: true
 
   query: "@*"
+  sort_by: display_order
+  order: ascending
   group_by: year
   group_order: descending
 
@@ -326,6 +328,7 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    display_order,
     google_scholar_id,
     html,
     inspirehep_id,
