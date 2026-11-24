@@ -8,7 +8,7 @@ profile:
   align: right
   image: profile-mountain-v2.jpg
   image_circular: false # crops the image to make it circular
-  more_info: <center> <a href="mailto:zhouchenyuan@sjtu.edu.cn">Email</a> | <a href="https://github.com/huagailuowen" rel="external nofollow noopener" target="_blank">GitHub</a> | <a href="./assets/pdf/CV.pdf?v=730c4ed1cc31">CV</a></center>
+  more_info: <center> <a href="mailto:zhouchenyuan@sjtu.edu.cn">Email</a> | <a href="https://github.com/huagailuowen" rel="external nofollow noopener" target="_blank">GitHub</a> | <a href="./assets/pdf/CV.pdf?v=7a35627b882a">CV</a></center>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Chenyuan Zhou, an undergraduate student in the ACM Honors Class at Shanghai Jiao Tong University. My research interests lie at the intersection of robotics, computer vision, multimodal learning, and continual learning. I am especially interested in building systems that can reason with physical intuition, follow instructions, and adapt from new experiences in the real world.
+I am Chenyuan Zhou, an undergraduate student in the ACM Honors Class at Shanghai Jiao Tong University, pursuing a Bachelor of Engineering in Computer Science. My research interests lie at the intersection of robotics, computer vision, multimodal learning, and continual learning. I am especially interested in building systems that can reason with physical intuition, follow instructions, and adapt from new experiences in the real world.
 
 Since June 2026, I have been a research intern at Stanford CS, Stanford University, co-advised by Prof. Yejin Choi and Prof. Leonidas Guibas and mentored by Yining Hong. My current work focuses on adaptive world models for embodied AI, particularly test-time adaptation to new environments.
 
